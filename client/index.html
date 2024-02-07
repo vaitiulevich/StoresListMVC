@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAPUI5</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/609f8163af.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <aside class="stores-list">
+      <h1 class="headline container">Stores list</h1>
+      <header class="stores-list__header container">
+        <form class="stores-header-form">
+          <input
+            class="stores-list__header-searchfield input js-searching-store"
+            type="text"
+            placeholder="Search"
+          />
+          <div>
+            <i
+              class="fa-solid fa-magnifying-glass pointer search-input-icon js-stores-list__search-btn"
+            ></i>
+            <i
+              class="fa-solid fa-arrows-rotate pointer search-input-icon js-stores-list__reload-btn"
+            ></i>
+          </div>
+        </form>
+        <div class="control-buttons">
+          <button class="control-buttons__hide-btn">
+            <i class="fa-solid fa-chevron-down control-buttons-icon"></i>
+          </button>
+          <button class="control-buttons__pin-btn">
+            <i class="fa-solid fa-thumbtack control-buttons-icon"></i>
+          </button>
+        </div>
+      </header>
+
+      <ul class="stores-wrapper"></ul>
+
+      <footer class="footer">
+        <button class="create-btn js-create-store-btn">Create</button>
+      </footer>
+    </aside>
+    <section class="store-details-box">
+      <header class="status-selected-store-header">
+        Store is not selected
+      </header>
+      <div class="status-selected-store">
+        <i class="fa-solid fa-store fa- store-icon"></i>
+        <h3 class="status-selected-store-headline">
+          The store is not selected
+        </h3>
+        <p class="status-selected-store-text">
+          Please select a store to proceed
+        </p>
+      </div>
+    </section>
+
+    <div class="modal">
+      <dialog class="modal-box">
+        <div class="modal-header"></div>
+        <div class="modal-body">
+          <form action="" class="modal__form">
+            <div class="modal-footer"></div>
+          </form>
+        </div>
+      </dialog>
+    </div>
+    <script src="./Constants.js" type="module"></script>
+    <script src="./Controllers/Controller.js" type="module"></script>
+    <script src="./Views/View.js" type="module"></script>
+    <script src="./Models/Model.js" type="module"></script>
+  </body>
+</html>
